@@ -9,45 +9,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['Poppins', 'sans-serif'],
-            },
-            colors: {
-              'brand-primary': {
-                '50': '#f0f6fe',
-                '100': '#dde9fd',
-                '200': '#c2d8fb',
-                '300': '#9bc2f8',
-                '400': '#6da7f2',
-                '500': '#4b88ea',
-                '600': '#366ddf',
-                '700': '#2d5ac8',
-                '800': '#294aa5',
-                '900': '#264185',
-                '950': '#1b2a55',
-              },
-              'brand-secondary': {
-                '50': '#f0f9f8',
-                '100': '#dcf2ef',
-                '200': '#bfe5de',
-                '300': '#98d5ca',
-                '400': '#68bfb2',
-                '500': '#46a79a',
-                '600': '#36897e',
-                '700': '#2e7068',
-                '800': '#2a5b55',
-                '900': '#254b47',
-                '950': '#122c2a',
-              },
-            }
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter","sans-serif"],
+            display: ["Poppins","sans-serif"],
+          },
+          colors: {
+            'brand-primary': {
+          "50": "#f0f6fe",
+          "100": "#dde9fd",
+          "200": "#c2d8fb",
+          "300": "#9bc2f8",
+          "400": "#6da7f2",
+          "500": "#4b88ea",
+          "600": "#366ddf",
+          "700": "#2d5ac8",
+          "800": "#294aa5",
+          "900": "#264185",
+          "950": "#1b2a55"
+},
+            'brand-secondary': {
+          "50": "#f0f9f8",
+          "100": "#dcf2ef",
+          "200": "#bfe5de",
+          "300": "#98d5ca",
+          "400": "#68bfb2",
+          "500": "#46a79a",
+          "600": "#36897e",
+          "700": "#2e7068",
+          "800": "#2a5b55",
+          "900": "#254b47",
+          "950": "#122c2a"
+},
           }
         }
       }
-    </script>
+    }
+  </script>
 
   <script type="importmap">
 {
@@ -58,9 +58,18 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/JKJCOLLP/assets/index-CQ2kMy06.js"></script>
+  <script type="module" crossorigin src="/JKJCOLLP/assets/index-TJzNW4uT.js"></script>
 </head>
   <body class="bg-white">
     <div id="root"></div>
+    <script>
+      // Load saved theme on page load
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          console.log('Loading saved theme:', savedTheme);
+        }
+      })();
+    </script>
   </body>
 </html>
